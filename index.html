@@ -3,34 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Last of Us Part I</title>
-    <!-- Vinculação do arquivo CSS externo -->
+
+    <title>The Last of Us Part I | Leonardo</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <main class="container">
-        <header class="header">
-            <h1 class="titulo-principal">The Last of Us Part I</h1>
-            <p class="subtitulo">Uma jornada inesquecível pela sobrevivência e humanidade</p>
-        </header>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <nav>
+            <h2 class="logo">TLOU<span>•</span></h2>
 
-        <div class="imagem-container">
-            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800&auto=format&fit=crop" alt="Cenário pós-apocalíptico com vegetação sobre ruínas urbanas" class="imagem-jogo">
-        </div>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#personagens">Personagens</a></li>
+                <li><a href="#gameplay">Gameplay</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <section class="conteudo">
+    <!-- Seção principal -->
+    <section id="inicio" class="hero">
+
+        <div class="hero-conteudo">
+            <p class="subtitulo">UMA JORNADA PELO FIM DO MUNDO</p>
+
+            <h1>
+                THE LAST OF US
+                <span>PART I</span>
+            </h1>
+
             <p class="descricao">
-                Em uma civilização devastada pela infecção fúngica do fungo Cordyceps, onde infectados e sobreviventes desequilibrados correm soltos, Joel, um protagonista amargurado, é contratado para tirar Ellie, uma garota de 14 anos, de uma zona de quarentena militar. O que começa como um pequeno trabalho logo se transforma em uma jornada brutal e emocionante cruzando os Estados Unidos.
+                Uma história emocionante sobre sobrevivência, esperança,
+                amizade e as escolhas que fazemos em um mundo devastado.
             </p>
 
-            <a href="https://www.playstation.com/pt-br/games/the-last-of-us-part-i/" target="_blank" rel="noopener noreferrer" class="botao-saiba-mais">Saiba Mais sobre o Jogo</a>
+            <a href="#historia" class="botao">Conheça o jogo</a>
+        </div>
+
+    </section>
+
+    <!-- Conteúdo -->
+    <main>
+
+        <!-- Sobre -->
+        <section id="historia" class="secao">
+
+            <p class="titulo-pequeno">SOBRE O JOGO</p>
+
+            <h2>Uma história que marcou uma geração</h2>
+
+            <p class="texto-central">
+                The Last of Us Part I é um jogo de ação e aventura desenvolvido
+                pela Naughty Dog e publicado pela PlayStation. O jogo apresenta
+                uma narrativa intensa ambientada em um mundo pós-apocalíptico,
+                onde a humanidade luta para sobreviver após uma pandemia causada
+                por uma infecção.
+            </p>
+
+            <p class="texto-central">
+                A aventura acompanha Joel, um sobrevivente endurecido pelos
+                acontecimentos do passado, e Ellie, uma jovem que pode representar
+                uma esperança para a humanidade. Juntos, eles atravessam diferentes
+                regiões dos Estados Unidos enfrentando perigos e descobrindo
+                novas partes de suas próprias histórias.
+            </p>
+
         </section>
 
-        <footer class="rodape">
-            <p>Desenvolvido por: <strong class="nome-autor">[Seu Nome Aqui]</strong></p>
-        </footer>
+
+        <!-- Informações -->
+        <section class="informacoes">
+
+            <div class="card">
+                <h3>🎮 Gênero</h3>
+                <p>Ação, aventura e sobrevivência.</p>
+            </div>
+
+            <div class="card">
+                <h3>🏢 Desenvolvedora</h3>
+                <p>Naughty Dog</p>
+            </div>
+
+            <div class="card">
+                <h3>🎬 Publicadora</h3>
+                <p>PlayStation</p>
+            </div>
+
+            <div class="card">
+                <h3>🌎 Cenário</h3>
+                <p>Estados Unidos pós-apocalípticos.</p>
+            </div>
+
+        </section>
+
+
+        <!-- Personagens -->
+        <section id="personagens" class="secao personagens">
+
+            <p class="titulo-pequeno">PERSONAGENS</p>
+
+            <h2>Os protagonistas da jornada</h2>
+
+            <div class="personagens-grid">
+
+                <article class="personagem">
+                    <div class="icone">🧔</div>
+
+                    <h3>Joel</h3>
+
+                    <p>
+                        Um sobrevivente experiente que aprendeu a fazer de tudo
+                        para continuar vivo. Sua jornada muda completamente
+                        quando ele conhece Ellie.
+                    </p>
+                </article>
+
+
+                <article class="personagem destaque">
+                    <div class="icone">👧</div>
+
+                    <h3>Ellie</h3>
+
+                    <p>
+                        Uma jovem corajosa, inteligente e determinada. Apesar
+                        da pouca idade, Ellie demonstra uma grande capacidade
+                        de enfrentar os perigos do mundo.
+                    </p>
+                </article>
+
+
+                <article class="personagem">
+                    <div class="icone">🎒</div>
+
+                    <h3>Sobrevivência</h3>
+
+                    <p>
+                        Durante a aventura, Joel e Ellie precisam encontrar
+                        recursos, evitar inimigos e tomar decisões para
+                        continuar avançando.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Gameplay -->
+        <section id="gameplay" class="secao gameplay">
+
+            <div class="gameplay-texto">
+
+                <p class="titulo-pequeno">GAMEPLAY</p>
+
+                <h2>Sobreviva a qualquer custo</h2>
+
+                <p>
+                    O gameplay mistura exploração, combate, furtividade e
+                    gerenciamento de recursos. Muitas situações podem ser
+                    enfrentadas de maneiras diferentes, permitindo que o
+                    jogador escolha entre confrontar os inimigos ou tentar
+                    passar despercebido.
+                </p>
+
+                <p>
+                    A exploração também é importante. O jogador pode encontrar
+                    recursos, itens e documentos que ajudam a conhecer melhor
+                    o mundo e as pessoas que viveram nele.
+                </p>
+
+                <a href="#curiosidades" class="botao">Ver curiosidades</a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Curiosidades -->
+        <section id="curiosidades" class="secao">
+
+            <p class="titulo-pequeno">CURIOSIDADES</p>
+
+            <h2>Você sabia?</h2>
+
+            <div class="curiosidades">
+
+                <div class="curiosidade">
+                    <span>01</span>
+                    <p>
+                        The Last of Us Part I é uma reconstrução do jogo
+                        originalmente lançado em 2013.
+                    </p>
+                </div>
+
+                <div class="curiosidade">
+                    <span>02</span>
+                    <p>
+                        O jogo é conhecido por sua narrativa cinematográfica
+                        e pelo desenvolvimento profundo de seus personagens.
+                    </p>
+                </div>
+
+                <div class="curiosidade">
+                    <span>03</span>
+                    <p>
+                        O mundo do jogo combina cidades abandonadas com
+                        natureza tomando conta das construções.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
+
+
+    <!-- Rodapé -->
+    <footer>
+
+        <h2>TLOU<span>•</span></h2>
+
+        <p>
+            Página criada por <strong>Leonardo</strong> 🎮
+        </p>
+
+        <p class="copyright">
+            Projeto desenvolvido para fins educacionais.
+        </p>
+
+    </footer>
 
 </body>
 </html>
