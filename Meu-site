@@ -1,5 +1,9 @@
-meu-site
+meu-site/
 │
 ├── index.html
 ├── style.css
-└── the-last-of-us.jpg
+│
+└── imagens/
+    ├── fundo.jpg
+    ├── joel.jpg
+    └── ellie.jpg

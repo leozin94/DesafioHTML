@@ -1,220 +1,826 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Um site dedicado a The Last of Us Part I, sua história, personagens, gameplay e universo."
+    >
 
     <title>The Last of Us Part I | Leonardo</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap"
+        rel="stylesheet"
+    >
 </head>
+
 
 <body>
 
-    <!-- Cabeçalho -->
-    <header class="cabecalho">
-        <nav>
-            <h2 class="logo">TLOU<span>•</span></h2>
 
-            <ul class="menu">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#historia">História</a></li>
-                <li><a href="#personagens">Personagens</a></li>
-                <li><a href="#gameplay">Gameplay</a></li>
+    <!-- =====================================================
+         MENU
+    ====================================================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="#inicio" class="logo">
+                TLOU<span>•</span>
+            </a>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+
+                <li>
+                    <a href="#historia">História</a>
+                </li>
+
+                <li>
+                    <a href="#personagens">Personagens</a>
+                </li>
+
+                <li>
+                    <a href="#gameplay">Gameplay</a>
+                </li>
+
+                <li>
+                    <a href="#universo">Universo</a>
+                </li>
+
             </ul>
+
+            <a href="#sobre" class="nav-button">
+                Explorar
+            </a>
+
         </nav>
+
     </header>
 
-    <!-- Seção principal -->
-    <section id="inicio" class="hero">
 
-        <div class="hero-conteudo">
-            <p class="subtitulo">UMA JORNADA PELO FIM DO MUNDO</p>
 
-            <h1>
-                THE LAST OF US
-                <span>PART I</span>
-            </h1>
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
 
-            <p class="descricao">
-                Uma história emocionante sobre sobrevivência, esperança,
-                amizade e as escolhas que fazemos em um mundo devastado.
-            </p>
-
-            <a href="#historia" class="botao">Conheça o jogo</a>
-        </div>
-
-    </section>
-
-    <!-- Conteúdo -->
     <main>
 
-        <!-- Sobre -->
-        <section id="historia" class="secao">
+        <section id="inicio" class="hero">
 
-            <p class="titulo-pequeno">SOBRE O JOGO</p>
+            <div class="hero-overlay"></div>
 
-            <h2>Uma história que marcou uma geração</h2>
+            <div class="hero-content">
 
-            <p class="texto-central">
-                The Last of Us Part I é um jogo de ação e aventura desenvolvido
-                pela Naughty Dog e publicado pela PlayStation. O jogo apresenta
-                uma narrativa intensa ambientada em um mundo pós-apocalíptico,
-                onde a humanidade luta para sobreviver após uma pandemia causada
-                por uma infecção.
-            </p>
-
-            <p class="texto-central">
-                A aventura acompanha Joel, um sobrevivente endurecido pelos
-                acontecimentos do passado, e Ellie, uma jovem que pode representar
-                uma esperança para a humanidade. Juntos, eles atravessam diferentes
-                regiões dos Estados Unidos enfrentando perigos e descobrindo
-                novas partes de suas próprias histórias.
-            </p>
-
-        </section>
-
-
-        <!-- Informações -->
-        <section class="informacoes">
-
-            <div class="card">
-                <h3>🎮 Gênero</h3>
-                <p>Ação, aventura e sobrevivência.</p>
-            </div>
-
-            <div class="card">
-                <h3>🏢 Desenvolvedora</h3>
-                <p>Naughty Dog</p>
-            </div>
-
-            <div class="card">
-                <h3>🎬 Publicadora</h3>
-                <p>PlayStation</p>
-            </div>
-
-            <div class="card">
-                <h3>🌎 Cenário</h3>
-                <p>Estados Unidos pós-apocalípticos.</p>
-            </div>
-
-        </section>
-
-
-        <!-- Personagens -->
-        <section id="personagens" class="secao personagens">
-
-            <p class="titulo-pequeno">PERSONAGENS</p>
-
-            <h2>Os protagonistas da jornada</h2>
-
-            <div class="personagens-grid">
-
-                <article class="personagem">
-                    <div class="icone">🧔</div>
-
-                    <h3>Joel</h3>
-
-                    <p>
-                        Um sobrevivente experiente que aprendeu a fazer de tudo
-                        para continuar vivo. Sua jornada muda completamente
-                        quando ele conhece Ellie.
-                    </p>
-                </article>
-
-
-                <article class="personagem destaque">
-                    <div class="icone">👧</div>
-
-                    <h3>Ellie</h3>
-
-                    <p>
-                        Uma jovem corajosa, inteligente e determinada. Apesar
-                        da pouca idade, Ellie demonstra uma grande capacidade
-                        de enfrentar os perigos do mundo.
-                    </p>
-                </article>
-
-
-                <article class="personagem">
-                    <div class="icone">🎒</div>
-
-                    <h3>Sobrevivência</h3>
-
-                    <p>
-                        Durante a aventura, Joel e Ellie precisam encontrar
-                        recursos, evitar inimigos e tomar decisões para
-                        continuar avançando.
-                    </p>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- Gameplay -->
-        <section id="gameplay" class="secao gameplay">
-
-            <div class="gameplay-texto">
-
-                <p class="titulo-pequeno">GAMEPLAY</p>
-
-                <h2>Sobreviva a qualquer custo</h2>
-
-                <p>
-                    O gameplay mistura exploração, combate, furtividade e
-                    gerenciamento de recursos. Muitas situações podem ser
-                    enfrentadas de maneiras diferentes, permitindo que o
-                    jogador escolha entre confrontar os inimigos ou tentar
-                    passar despercebido.
+                <p class="hero-small-title">
+                    NAUGHTY DOG • PLAYSTATION
                 </p>
 
-                <p>
-                    A exploração também é importante. O jogador pode encontrar
-                    recursos, itens e documentos que ajudam a conhecer melhor
-                    o mundo e as pessoas que viveram nele.
+                <h1>
+                    THE LAST
+                    <br>
+                    <span>OF US</span>
+                </h1>
+
+                <div class="hero-line"></div>
+
+                <h2>
+                    PART I
+                </h2>
+
+                <p class="hero-description">
+
+                    Em um mundo destruído pela pandemia,
+                    duas pessoas encontram uma razão para
+                    continuar vivendo.
+
                 </p>
 
-                <a href="#curiosidades" class="botao">Ver curiosidades</a>
+                <div class="hero-buttons">
+
+                    <a href="#historia" class="button button-primary">
+                        Descobrir a história
+                    </a>
+
+                    <a href="#personagens" class="button button-secondary">
+                        Conhecer personagens
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="scroll-indicator">
+
+                <span>SCROLL</span>
+
+                <div class="scroll-line"></div>
 
             </div>
 
         </section>
 
 
-        <!-- Curiosidades -->
-        <section id="curiosidades" class="secao">
 
-            <p class="titulo-pequeno">CURIOSIDADES</p>
+        <!-- =====================================================
+             INTRODUÇÃO
+        ====================================================== -->
 
-            <h2>Você sabia?</h2>
+        <section id="sobre" class="intro section">
 
-            <div class="curiosidades">
+            <div class="intro-container">
 
-                <div class="curiosidade">
-                    <span>01</span>
-                    <p>
-                        The Last of Us Part I é uma reconstrução do jogo
-                        originalmente lançado em 2013.
-                    </p>
+                <div class="section-label">
+                    01 / O JOGO
                 </div>
 
-                <div class="curiosidade">
-                    <span>02</span>
-                    <p>
-                        O jogo é conhecido por sua narrativa cinematográfica
-                        e pelo desenvolvimento profundo de seus personagens.
-                    </p>
+                <div class="intro-content">
+
+                    <div class="intro-title">
+
+                        <p>
+                            UMA JORNADA
+                        </p>
+
+                        <h2>
+                            ALÉM DA
+                            <span>SOBREVIVÊNCIA.</span>
+                        </h2>
+
+                    </div>
+
+
+                    <div class="intro-text">
+
+                        <p>
+
+                            <strong>The Last of Us Part I</strong>
+                            é uma experiência de ação e aventura
+                            focada em narrativa, exploração e
+                            sobrevivência.
+
+                        </p>
+
+                        <p>
+
+                            Em meio às ruínas de uma civilização
+                            devastada, Joel e Ellie atravessam os
+                            Estados Unidos enfrentando infectados,
+                            sobreviventes e decisões difíceis.
+
+                        </p>
+
+                        <p>
+
+                            Mais do que uma história sobre o fim
+                            do mundo, o jogo explora relações
+                            humanas, perda, esperança e até onde
+                            alguém está disposto a ir por outra pessoa.
+
+                        </p>
+
+                    </div>
+
                 </div>
 
-                <div class="curiosidade">
-                    <span>03</span>
-                    <p>
-                        O mundo do jogo combina cidades abandonadas com
-                        natureza tomando conta das construções.
-                    </p>
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             HISTÓRIA
+        ====================================================== -->
+
+        <section id="historia" class="story section">
+
+            <div class="story-background"></div>
+
+            <div class="story-container">
+
+                <div class="section-label light">
+                    02 / A HISTÓRIA
                 </div>
+
+                <div class="story-content">
+
+                    <p class="story-kicker">
+                        VINTE ANOS DEPOIS
+                    </p>
+
+                    <h2>
+                        O MUNDO
+                        <br>
+                        <span>NÃO É MAIS O MESMO.</span>
+                    </h2>
+
+                    <p class="story-description">
+
+                        Após uma pandemia causada por uma infecção
+                        que transforma seres humanos em criaturas
+                        perigosas, a sociedade entra em colapso.
+
+                    </p>
+
+                    <p class="story-description">
+
+                        Joel recebe a missão de transportar Ellie,
+                        uma garota de 14 anos, através de uma América
+                        devastada. O que começa como uma simples missão
+                        se transforma em uma das relações mais marcantes
+                        da história dos videogames.
+
+                    </p>
+
+                    <a href="#personagens" class="text-link">
+                        Continuar a jornada →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             ESTATÍSTICAS
+        ====================================================== -->
+
+        <section class="stats">
+
+            <div class="stats-container">
+
+                <div class="stat">
+
+                    <strong>
+                        20
+                    </strong>
+
+                    <span>
+                        ANOS APÓS O SURTO
+                    </span>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <strong>
+                        2
+                    </strong>
+
+                    <span>
+                        PROTAGONISTAS
+                    </span>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <strong>
+                        1
+                    </strong>
+
+                    <span>
+                        GRANDE JORNADA
+                    </span>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <strong>
+                        ∞
+                    </strong>
+
+                    <span>
+                        EMOÇÕES
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             PERSONAGENS
+        ====================================================== -->
+
+        <section id="personagens" class="characters section">
+
+            <div class="characters-container">
+
+                <div class="section-label">
+                    03 / PERSONAGENS
+                </div>
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="heading-small">
+                            DUAS VIDAS.
+                        </p>
+
+                        <h2>
+                            UMA
+                            <span>JORNADA.</span>
+                        </h2>
+
+                    </div>
+
+                    <p class="heading-description">
+
+                        Personagens complexos e humanos são
+                        o coração de The Last of Us.
+
+                    </p>
+
+                </div>
+
+
+                <div class="character-grid">
+
+
+                    <!-- JOEL -->
+
+                    <article class="character-card joel-card">
+
+                        <div class="character-image joel-image">
+
+                            <div class="character-number">
+                                01
+                            </div>
+
+                        </div>
+
+                        <div class="character-info">
+
+                            <p class="character-role">
+                                O SOBREVIVENTE
+                            </p>
+
+                            <h3>
+                                JOEL
+                            </h3>
+
+                            <p>
+
+                                Joel é um homem marcado pelas
+                                perdas do passado. Depois de anos
+                                sobrevivendo em um mundo brutal,
+                                ele se torna responsável por levar
+                                Ellie até um grupo chamado Vaga-lumes.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ELLIE -->
+
+                    <article class="character-card ellie-card">
+
+                        <div class="character-image ellie-image">
+
+                            <div class="character-number">
+                                02
+                            </div>
+
+                        </div>
+
+                        <div class="character-info">
+
+                            <p class="character-role">
+                                A ESPERANÇA
+                            </p>
+
+                            <h3>
+                                ELLIE
+                            </h3>
+
+                            <p>
+
+                                Curiosa, corajosa e determinada,
+                                Ellie cresceu em um mundo que nunca
+                                conheceu como era antes da pandemia.
+                                Sua personalidade transforma
+                                completamente a jornada de Joel.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             GAMEPLAY
+        ====================================================== -->
+
+        <section id="gameplay" class="gameplay section">
+
+            <div class="gameplay-container">
+
+                <div class="section-label light">
+                    04 / GAMEPLAY
+                </div>
+
+                <div class="gameplay-heading">
+
+                    <p>
+                        CADA RECURSO IMPORTA.
+                    </p>
+
+                    <h2>
+                        SOBREVIVA.
+                        <span>ADAPTE-SE.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="gameplay-grid">
+
+
+                    <div class="gameplay-card">
+
+                        <div class="gameplay-icon">
+                            ◈
+                        </div>
+
+                        <h3>
+                            EXPLORAÇÃO
+                        </h3>
+
+                        <p>
+
+                            Explore ambientes abandonados,
+                            encontre recursos e descubra
+                            detalhes escondidos pelo mundo.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="gameplay-card">
+
+                        <div class="gameplay-icon">
+                            ◉
+                        </div>
+
+                        <h3>
+                            FURTIVIDADE
+                        </h3>
+
+                        <p>
+
+                            Nem sempre lutar é a melhor opção.
+                            Use o ambiente e o silêncio para
+                            superar situações perigosas.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="gameplay-card">
+
+                        <div class="gameplay-icon">
+                            ◆
+                        </div>
+
+                        <h3>
+                            COMBATE
+                        </h3>
+
+                        <p>
+
+                            Recursos são limitados. Escolha
+                            cuidadosamente quando lutar e
+                            quando economizar seus equipamentos.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="gameplay-card">
+
+                        <div class="gameplay-icon">
+                            ✦
+                        </div>
+
+                        <h3>
+                            ARTESANATO
+                        </h3>
+
+                        <p>
+
+                            Utilize os recursos encontrados
+                            durante a jornada para criar
+                            equipamentos e itens úteis.
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             INIMIGOS / UNIVERSO
+        ====================================================== -->
+
+        <section id="universo" class="infected section">
+
+            <div class="infected-container">
+
+                <div class="section-label">
+                    05 / O UNIVERSO
+                </div>
+
+                <div class="infected-heading">
+
+                    <p>
+                        O PERIGO ESTÁ EM TODOS OS LUGARES.
+                    </p>
+
+                    <h2>
+                        NÃO SÃO APENAS
+                        <span>OS INFECTADOS.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="danger-grid">
+
+
+                    <article class="danger-card">
+
+                        <span class="danger-number">
+                            01
+                        </span>
+
+                        <h3>
+                            INFECTADOS
+                        </h3>
+
+                        <p>
+
+                            Pessoas transformadas pela infecção
+                            representam uma das maiores ameaças
+                            encontradas durante a jornada.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="danger-card">
+
+                        <span class="danger-number">
+                            02
+                        </span>
+
+                        <h3>
+                            SOBREVIVENTES
+                        </h3>
+
+                        <p>
+
+                            Em um mundo sem regras, outros grupos
+                            de sobreviventes também podem ser
+                            extremamente perigosos.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="danger-card">
+
+                        <span class="danger-number">
+                            03
+                        </span>
+
+                        <h3>
+                            O AMBIENTE
+                        </h3>
+
+                        <p>
+
+                            Ruínas, prédios abandonados e regiões
+                            tomadas pela natureza escondem
+                            perigos e histórias.
+
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             TEMAS
+        ====================================================== -->
+
+        <section class="quote-section">
+
+            <div class="quote-overlay"></div>
+
+            <div class="quote-content">
+
+                <span>
+                    UMA HISTÓRIA SOBRE
+                </span>
+
+                <h2>
+                    PERDA.
+                    <br>
+                    ESPERANÇA.
+                    <br>
+                    <em>AMOR.</em>
+                </h2>
+
+                <p>
+
+                    The Last of Us não é apenas sobre sobreviver
+                    ao fim do mundo. É sobre encontrar motivos
+                    para continuar.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             INFORMAÇÕES
+        ====================================================== -->
+
+        <section class="game-info section">
+
+            <div class="game-info-container">
+
+                <div class="section-label">
+                    06 / INFORMAÇÕES
+                </div>
+
+                <h2>
+                    THE LAST OF US
+                    <span>PART I</span>
+                </h2>
+
+
+                <div class="info-table">
+
+
+                    <div class="info-row">
+
+                        <span>
+                            Desenvolvedora
+                        </span>
+
+                        <strong>
+                            Naughty Dog
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>
+                            Publicadora
+                        </span>
+
+                        <strong>
+                            PlayStation
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>
+                            Gênero
+                        </span>
+
+                        <strong>
+                            Ação / Aventura
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>
+                            Plataforma
+                        </span>
+
+                        <strong>
+                            PlayStation 5 / PC
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>
+                            Tema
+                        </span>
+
+                        <strong>
+                            Sobrevivência e narrativa
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CTA FINAL
+        ====================================================== -->
+
+        <section class="final-cta">
+
+            <div class="final-cta-content">
+
+                <p>
+                    O FIM DO MUNDO É APENAS O COMEÇO.
+                </p>
+
+                <h2>
+                    PRONTO PARA
+                    <span>A JORNADA?</span>
+                </h2>
+
+                <a href="#inicio" class="button button-primary">
+                    Voltar ao início ↑
+                </a>
 
             </div>
 
@@ -223,20 +829,90 @@
     </main>
 
 
-    <!-- Rodapé -->
-    <footer>
 
-        <h2>TLOU<span>•</span></h2>
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
 
-        <p>
-            Página criada por <strong>Leonardo</strong> 🎮
-        </p>
+    <footer class="footer">
 
-        <p class="copyright">
-            Projeto desenvolvido para fins educacionais.
-        </p>
+        <div class="footer-container">
+
+
+            <div class="footer-brand">
+
+                <div class="logo">
+                    TLOU<span>•</span>
+                </div>
+
+                <p>
+                    Uma página dedicada ao universo
+                    de The Last of Us Part I.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>
+                    NAVEGAÇÃO
+                </h3>
+
+                <a href="#inicio">
+                    Início
+                </a>
+
+                <a href="#historia">
+                    História
+                </a>
+
+                <a href="#personagens">
+                    Personagens
+                </a>
+
+                <a href="#gameplay">
+                    Gameplay
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>
+                    PROJETO
+                </h3>
+
+                <p>
+                    Criado por
+                </p>
+
+                <strong>
+                    Leonardo
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Leonardo • Projeto educacional
+            </p>
+
+            <p>
+                THE LAST OF US PART I
+            </p>
+
+        </div>
 
     </footer>
 
+
 </body>
+
 </html>
