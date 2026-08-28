@@ -1,0 +1,108 @@
+/* Estilização Geral da Página */
+body {
+    background-color: #121412;
+    color: #e2e8e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+/* Container Principal Centralizado */
+.container {
+    background-color: #1c201d;
+    max-width: 700px;
+    margin: 0 auto; /* Espaçamento externo e centralização */
+    padding: 35px; /* Espaçamento interno */
+    border-radius: 12px; /* Cantos arredondados */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    border: 1px solid #2e3830;
+    text-align: center; /* Centralização do texto */
+}
+
+/* Cabeçalho */
+.header {
+    margin-bottom: 25px;
+}
+
+/* Título Principal */
+.titulo-principal {
+    color: #58a65c; /* Verde tom sobre tom combinando com a paleta */
+    font-size: 2.5rem; /* Tamanho da fonte */
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.subtitulo {
+    color: #9ab09c;
+    font-size: 1.1rem;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Imagem */
+.imagem-container {
+    margin: 20px 0 30px 0;
+}
+
+.imagem-jogo {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito :hover na imagem */
+.imagem-jogo:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(88, 166, 92, 0.3);
+}
+
+/* Seção de Conteúdo */
+.conteudo {
+    margin-bottom: 30px;
+}
+
+.descricao {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #c5d4c6;
+    text-align: justify; /* Alinhamento do texto */
+    margin-bottom: 25px;
+    padding: 0 10px;
+}
+
+/* Botão de Ação */
+.botao-saiba-mais {
+    display: inline-block;
+    background-color: #58a65c; /* Cor combinando com o título */
+    color: #0d120e;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 28px; /* Espaçamento interno */
+    border-radius: 6px; /* Cantos arredondados */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito :hover no botão */
+.botao-saiba-mais:hover {
+    background-color: #3d7840; /* Tom de verde mais escuro no hover */
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Rodapé */
+.rodape {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #2e3830;
+    font-size: 0.95rem;
+    color: #839684;
+}
+
+.nome-autor {
+    color: #58a65c;
+}
