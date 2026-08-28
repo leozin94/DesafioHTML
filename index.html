@@ -3,34 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Last of Us Part I - Por Leonardo</title>
+    <title>The Last of Us Part I | Experience by Leonardo</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <h1 class="title">The Last of Us Part I</h1>
-        <p class="author">Desenvolvido por <span>Leonardo</span></p>
+
+    <nav class="navbar">
+        <div class="nav-logo">TLOU<span>PART I</span></div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">A História</a></li>
+            <li><a href="#personagens">Personagens</a></li>
+            <li><a href="#destaques">Destaques</a></li>
+        </ul>
+        <div class="author-badge">By <span>Leonardo</span></div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="tagline">Uma Obra-Prima Pós-Apocalíptica</span>
+            <h1 class="main-title">THE LAST OF US</h1>
+            <p class="hero-subtitle">Procure a luz no meio da escuridão. Acompanhe a jornada inesquecível de Joel e Ellie em um mundo onde a humanidade está à beira da extinção.</p>
+            <div class="hero-buttons">
+                <a href="#sobre" class="btn btn-primary">Explorar Universo</a>
+                <a href="#personagens" class="btn btn-secondary">Ver Personagens</a>
+            </div>
+        </div>
     </header>
 
-    <main class="container">
-        <section class="card">
-            <div class="image-wrapper">
-                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1000&auto=format&fit=crop" alt="Cenário pós-apocalíptico" class="hero-image">
+    <main class="main-container">
+        <section id="sobre" class="section">
+            <div class="section-header">
+                <h2>Sobrevivência & Redenção</h2>
+                <div class="divider"></div>
             </div>
-            
-            <article class="content">
-                <h2>Sobrevivência & Humanidade</h2>
-                <p>
-                    Em um mundo devastado por uma infecção parasitária de fungos, a sociedade desmoronou. A história acompanha Joel, um sobrevivente endurecido pela dor, contratado para contrabandear Ellie, uma garota de 14 anos, para fora de uma zona de quarentena militar. O que começa como um pequeno trabalho logo se transforma em uma jornada brutal e emocionante através dos Estados Unidos em ruínas.
-                </p>
-                <a href="#" class="btn-explore">Explorar o Universo</a>
-            </article>
+            <div class="about-grid">
+                <div class="about-image-card">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200&auto=format&fit=crop" alt="Mundo em ruínas de The Last of Us" class="featured-img">
+                    <div class="img-overlay-text">Zonas de Quarentena em Ruínas</div>
+                </div>
+                <div class="about-text">
+                    <p class="lead-text">
+                        Vinte anos após uma infecção fúngica devastar a civilização global, os sobreviventes sobrevivem em zonas de quarentena opressivas, facções rebeldes e vilarejos isolados.
+                    </p>
+                    <p>
+                        <strong>Joel</strong>, um contrabandista cínico assombrado por traumas do passado, é contratado para tirar <strong>Ellie</strong>, uma garota de 14 anos, de uma zona militar rígida. O que começa como um trabalho simples transforma-se em uma jornada brutal cruzando os Estados Unidos desolados.
+                    </p>
+                    <div class="stats-row">
+                        <div class="stat-box">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Prêmios de Jogo do Ano</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">4K</span>
+                            <span class="stat-label">Gráficos Remasterizados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="personagens" class="section dark-bg">
+            <div class="section-header">
+                <h2>Protagonistas</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="cards-grid">
+                <div class="character-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop" alt="Joel Miller">
+                    </div>
+                    <div class="card-info">
+                        <span class="character-role">Sobrevivente</span>
+                        <h3>Joel Miller</h3>
+                        <p>Um sobrevivente brutal e marcado pela perda. Suas habilidades de combate e instinto de preservação o mantiveram vivo quando o mundo ruiu.</p>
+                    </div>
+                </div>
+
+                <div class="character-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop" alt="Ellie Williams">
+                    </div>
+                    <div class="card-info">
+                        <span class="character-role">A Esperança</span>
+                        <h3>Ellie Williams</h3>
+                        <p>Uma órfã de 14 anos que cresceu no mundo pós-pandêmico. Madura além de seus anos, carrega um segredo capaz de mudar o destino da humanidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="destaques" class="section">
+            <div class="section-header">
+                <h2>Experiência de Jogo</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon">🌿</div>
+                    <h3>Narrativa Imersiva</h3>
+                    <p>Uma construção de mundo profunda focada nos laços humanos e nas escolhas morais em situações extremas.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">☣️</div>
+                    <h3>Infectados Aterrorizantes</h3>
+                    <p>Enfrente Corredores, Estaladores e Baiacus, cada um exigindo táticas de furtividade e recursos escassos.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">🛠️</div>
+                    <h3>Combate e Criação</h3>
+                    <p>Colete suprimentos nos cenários para criar kits médicos, bombas e aprimorar suas armas em bancadas de trabalho.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-banner">
+            <blockquote>
+                "Não importa o que aconteça, você sempre encontra algo pelo qual lutar."
+            </blockquote>
+            <cite>— Ellie Williams</cite>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2026 | Projeto por Leonardo</p>
+        <div class="footer-content">
+            <p class="footer-title">THE LAST OF US PART I</p>
+            <p class="footer-credit">Website projetado e desenvolvido por <strong>Leonardo</strong></p>
+            <p class="copyright">&copy; 2026 Leonardo Studios. Fan Page criada para fins demonstrativos.</p>
+        </div>
     </footer>
+
 </body>
 </html>

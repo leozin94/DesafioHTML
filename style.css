@@ -1,121 +1,507 @@
-/* Configuração Geral */
+/* ==========================================================================
+   RESET & VARIÁVEIS GERAIS
+   ========================================================================== */
+:root {
+    --bg-main: #0b0d0a;
+    --bg-card: #141812;
+    --bg-card-hover: #1c2319;
+    --accent-green: #52793d;
+    --accent-green-bright: #7ba85d;
+    --accent-gold: #c29b38;
+    --text-primary: #ecefe9;
+    --text-secondary: #9ea896;
+    --text-dark: #636d5c;
+    --border-color: rgba(123, 168, 93, 0.2);
+    --shadow-glow: 0 0 25px rgba(82, 121, 61, 0.3);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #0f120e;
-    color: #d1d5db;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    padding: 20px;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
 }
 
-/* Cabeçalho */
-.header {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 40px;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-main);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--accent-green);
+    border-radius: 4px;
 }
 
-.title {
-    color: #4a6b35;
+/* ==========================================================================
+   NAVEGAÇÃO (BARRA SUPERIOR)
+   ========================================================================== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+    background: rgba(11, 13, 10, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
+}
+
+.nav-logo {
     font-family: 'Cinzel', serif;
-    font-size: 2.8rem;
-    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 800;
     letter-spacing: 2px;
-    margin-bottom: 8px;
-    text-shadow: 0 0 15px rgba(74, 107, 53, 0.4);
+    color: var(--text-primary);
 }
 
-.author {
-    font-size: 1.1rem;
-    color: #9ca3af;
+.nav-logo span {
+    color: var(--accent-green-bright);
+    margin-left: 5px;
+    font-size: 1rem;
 }
 
-.author span {
-    color: #79a859;
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-green-bright);
+}
+
+.author-badge {
+    font-size: 0.85rem;
+    background-color: rgba(82, 121, 61, 0.15);
+    border: 1px solid var(--accent-green);
+    padding: 6px 16px;
+    border-radius: 20px;
+    color: var(--text-secondary);
+}
+
+.author-badge span {
+    color: var(--accent-gold);
     font-weight: 700;
 }
 
-/* Conteúdo Principal */
-.container {
-    max-width: 850px;
-    margin: 0 auto;
-}
-
-.card {
-    background-color: #1a2118;
-    border: 1px solid #2d3826;
-    border-radius: 16px;
-    padding: 35px;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7);
-}
-
-.image-wrapper {
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    background: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;
+    padding: 0 20px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(11, 13, 10, 0.6) 0%, rgba(11, 13, 10, 0.95) 100%);
+}
+
+.hero-content {
+    position: relative;
+    max-width: 900px;
+    z-index: 1;
+}
+
+.tagline {
+    display: inline-block;
+    color: var(--accent-green-bright);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.main-title {
+    font-family: 'Cinzel', serif;
+    font-size: 4.2rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: #ffffff;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0 auto 35px auto;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Botões Customizados */
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--accent-green);
+    color: #ffffff;
+    border: 1px solid var(--accent-green-bright);
+    box-shadow: var(--shadow-glow);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-green-bright);
+    transform: translateY(-3px);
+    box-shadow: 0 0 35px rgba(123, 168, 93, 0.6);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--text-dark);
+}
+
+.btn-secondary:hover {
+    border-color: var(--accent-green-bright);
+    color: var(--accent-green-bright);
+    transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   ESTRUTURA DAS SEÇÕES
+   ========================================================================== */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-green);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* ==========================================================================
+   SEÇÃO SOBRE / GRID
+   ========================================================================== */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-image-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+.featured-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.about-image-card:hover .featured-img {
+    transform: scale(1.05);
+}
+
+.img-overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, transparent 100%);
+    font-size: 0.85rem;
+    color: var(--accent-gold);
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.about-text .lead-text {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: var(--text-secondary);
     margin-bottom: 25px;
 }
 
-.hero-image {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-    border: 2px solid #3a4831;
-    transition: transform 0.4s ease, border-color 0.4s ease;
+.stats-row {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Efeito Hover na Imagem */
-.hero-image:hover {
-    transform: scale(1.02);
-    border-color: #79a859;
-}
-
-/* Texto e Botão */
-.content h2 {
-    color: #e5e7eb;
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.content p {
-    font-size: 1.05rem;
-    color: #a3acb9;
-    margin-bottom: 30px;
-    text-align: justify;
-}
-
-.btn-explore {
+.stat-number {
     display: block;
-    width: fit-content;
-    margin: 0 auto;
-    padding: 12px 30px;
-    background-color: #4a6b35;
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 8px;
-    text-align: center;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--accent-green-bright);
 }
 
-/* Efeito Hover no Botão */
-.btn-explore:hover {
-    background-color: #5c8542;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 18px rgba(92, 133, 66, 0.4);
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--text-dark);
+    text-transform: uppercase;
 }
 
-/* Rodapé */
-.footer {
+/* ==========================================================================
+   CARDS DOS PERSONAGENS
+   ========================================================================== */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+}
+
+.character-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.character-card:hover {
+    background-color: var(--bg-card-hover);
+    transform: translateY(-8px);
+    border-color: var(--accent-green-bright);
+    box-shadow: var(--shadow-glow);
+}
+
+.card-img-wrapper {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.character-card:hover .card-img-wrapper img {
+    transform: scale(1.08);
+}
+
+.card-info {
+    padding: 25px;
+}
+
+.character-role {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-gold);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.card-info h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.6rem;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.card-info p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   DESTAQUES DE JOGABILIDADE
+   ========================================================================== */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.feature-box {
+    background: rgba(20, 24, 18, 0.6);
+    padding: 35px 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
     text-align: center;
-    margin-top: 40px;
-    padding: 15px 0;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.feature-box:hover {
+    border-color: var(--accent-green);
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.feature-box h3 {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.feature-box p {
+    color: var(--text-secondary);
     font-size: 0.9rem;
-    color: #6b7280;
+}
+
+/* ==========================================================================
+   CITAÇÃO / QUOTE BANNER
+   ========================================================================== */
+.quote-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200&auto=format&fit=crop') center/cover fixed;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 16px;
+    margin: 40px 0 80px 0;
+    border: 1px solid var(--border-color);
+}
+
+.quote-banner blockquote {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+    font-style: italic;
+}
+
+.quote-banner cite {
+    color: var(--accent-gold);
+    font-size: 1rem;
+    font-style: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+   RODAPÉ
+   ========================================================================== */
+.footer {
+    background-color: #060805;
+    border-top: 1px solid var(--border-color);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.footer-credit {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+}
+
+.footer-credit strong {
+    color: var(--accent-green-bright);
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: var(--text-dark);
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+    
+    .main-title {
+        font-size: 2.6rem;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
 }
