@@ -73,4 +73,12 @@ h1:hover {
     opacity: 0.5;
     text-transform: uppercase;
     letter-spacing: 2px;
+}.imagem-destaque {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin: 0 auto 20px auto;
+    object-fit: cover;
 }
